@@ -1,7 +1,6 @@
-package com.jsp.pma.projectmanagement.dao;
+package com.jsp.pma.dao;
 
-import com.jsp.pma.projectmanagement.dao.ProjectRepository;
-import com.jsp.pma.projectmanagement.entities.Project;
+import com.jsp.pma.entities.Project;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;

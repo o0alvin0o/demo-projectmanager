@@ -1,4 +1,4 @@
-package com.jsp.pma.projectmanagement.controller;
+package com.jsp.pma.controller;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

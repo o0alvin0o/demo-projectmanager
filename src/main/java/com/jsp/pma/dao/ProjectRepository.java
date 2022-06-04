@@ -1,7 +1,7 @@
-package com.jsp.pma.projectmanagement.dao;
+package com.jsp.pma.dao;
 
-import com.jsp.pma.projectmanagement.dto.ChartData;
-import com.jsp.pma.projectmanagement.entities.Project;
+import com.jsp.pma.dto.ChartData;
+import com.jsp.pma.entities.Project;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 

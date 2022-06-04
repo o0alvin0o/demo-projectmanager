@@ -1,6 +1,7 @@
-package com.jsp.pma.projectmanagement.entities;
+package com.jsp.pma.entities;
 
 import lombok.Data;
+import lombok.ToString;
 
 import javax.persistence.*;
 import java.util.ArrayList;

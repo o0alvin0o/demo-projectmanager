@@ -1,6 +1,8 @@
-package com.jsp.pma.projectmanagement.entities;
+package com.jsp.pma.entities;
 
 import lombok.Data;
+import lombok.ToString;
+
 import java.util.*;
 
 import javax.persistence.*;
@@ -33,4 +35,5 @@ public class Employee {
         this.lastName = lastName;
         this.email = email;
     }
+
 }

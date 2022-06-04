@@ -1,7 +1,7 @@
-package com.jsp.pma.projectmanagement.dao;
+package com.jsp.pma.dao;
 
-import com.jsp.pma.projectmanagement.dto.EmployeeProject;
-import com.jsp.pma.projectmanagement.entities.Employee;
+import com.jsp.pma.dto.EmployeeProject;
+import com.jsp.pma.entities.Employee;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 

@@ -1,4 +1,4 @@
-package com.jsp.pma.projectmanagement.dto;
+package com.jsp.pma.dto;
 
 public interface EmployeeProject {
 

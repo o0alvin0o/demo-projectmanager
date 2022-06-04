@@ -1,8 +1,8 @@
-package com.jsp.pma.projectmanagement.services;
+package com.jsp.pma.services;
 
-import com.jsp.pma.projectmanagement.dao.ProjectRepository;
-import com.jsp.pma.projectmanagement.dto.ChartData;
-import com.jsp.pma.projectmanagement.entities.Project;
+import com.jsp.pma.entities.Project;
+import com.jsp.pma.dao.ProjectRepository;
+import com.jsp.pma.dto.ChartData;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

@@ -1,16 +1,10 @@
-package com.jsp.pma.projectmanagement;
+package com.jsp.pma;
 
-import com.jsp.pma.projectmanagement.dao.EmployeeRepository;
-import com.jsp.pma.projectmanagement.dao.ProjectRepository;
-import com.jsp.pma.projectmanagement.entities.Employee;
-import com.jsp.pma.projectmanagement.entities.Project;
+import com.jsp.pma.dao.EmployeeRepository;
+import com.jsp.pma.dao.ProjectRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.Bean;
-
-import java.util.Arrays;
 
 @SpringBootApplication
 public class ProjectManagementApplication {

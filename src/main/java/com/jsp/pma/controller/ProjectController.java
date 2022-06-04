@@ -1,18 +1,15 @@
-package com.jsp.pma.projectmanagement.controller;
+package com.jsp.pma.controller;
 
-import com.jsp.pma.projectmanagement.dao.EmployeeRepository;
-import com.jsp.pma.projectmanagement.dao.ProjectRepository;
-import com.jsp.pma.projectmanagement.entities.Employee;
-import com.jsp.pma.projectmanagement.entities.Project;
-import com.jsp.pma.projectmanagement.services.EmployeeService;
-import com.jsp.pma.projectmanagement.services.ProjectService;
+import com.jsp.pma.entities.Employee;
+import com.jsp.pma.entities.Project;
+import com.jsp.pma.services.EmployeeService;
+import com.jsp.pma.services.ProjectService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
 

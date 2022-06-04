@@ -1,8 +1,8 @@
-package com.jsp.pma.projectmanagement.services;
+package com.jsp.pma.services;
 
-import com.jsp.pma.projectmanagement.dao.EmployeeRepository;
-import com.jsp.pma.projectmanagement.dto.EmployeeProject;
-import com.jsp.pma.projectmanagement.entities.Employee;
+import com.jsp.pma.dao.EmployeeRepository;
+import com.jsp.pma.dto.EmployeeProject;
+import com.jsp.pma.entities.Employee;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
