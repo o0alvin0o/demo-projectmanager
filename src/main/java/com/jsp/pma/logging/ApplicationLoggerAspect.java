@@ -2,10 +2,8 @@ package com.jsp.pma.logging;
 
 
 import org.aspectj.lang.JoinPoint;
-import org.aspectj.lang.annotation.After;
-import org.aspectj.lang.annotation.Aspect;
-import org.aspectj.lang.annotation.Before;
-import org.aspectj.lang.annotation.Pointcut;
+import org.aspectj.lang.ProceedingJoinPoint;
+import org.aspectj.lang.annotation.*;
 import org.slf4j.LoggerFactory;
 
 import org.slf4j.Logger;
@@ -25,13 +23,29 @@ public class ApplicationLoggerAspect {
     }
 
 
-    @After("definePackagePointcuts()")
-    public void logBefore(JoinPoint jp) {
+    @Around("definePackagePointcuts()")
+    public Object logAround(ProceedingJoinPoint jp) {
         log.debug("\n \n \n");
+        log.debug("************ Before Method Execution ********** \n {}.{} () with arguments[s] = {}",
+                jp.getSignature().getDeclaringTypeName(),
+                jp.getSignature().getName(),
+                Arrays.toString(jp.getArgs()));
+        log.debug("_________________________________");
+
+        Object o = null;
+
+        try {
+            o = jp.proceed();
+        } catch (Throwable throwable) {
+            throwable.printStackTrace();
+        }
+
         log.debug("************ After Method Execution ********** \n {}.{} () with arguments[s] = {}",
                 jp.getSignature().getDeclaringTypeName(),
                 jp.getSignature().getName(),
                 Arrays.toString(jp.getArgs()));
         log.debug("_________________________________");
+
+        return o;
     }
 }

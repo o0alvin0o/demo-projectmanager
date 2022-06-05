@@ -33,7 +33,7 @@ public class EmployeeController {
 
     @GetMapping
     public String displayEmployees(Model model) {
-        List<Employee> employees = empService.getAll();
+        Iterable<Employee> employees = empService.getAll();
         model.addAttribute("employees", employees);
         return "employees/list-employees";
     }
